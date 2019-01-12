@@ -25,8 +25,59 @@
     <title>React App</title>
   </head>
   <body>
+      <h1>Test</h1>
+      <div class="container">
+          <h1>Javascript - StackOverflow</h1>
+          <section>
+            <form>
+              <h2>Search API</h2>
+              <fieldset>
+                <label>Page</label>
+                <input id="page-input" type="number" min="1">
+              </fieldset>
+              <fieldset>
+                <label>RPP</label>
+                <input id="rpp-input" type="number" min="1" max="99">
+              </fieldset>
+              <fieldset>
+                <label>Sort</label>
+                <select id="sort-input">
+                  <option value="" selected>None</option>
+                  <option value="activity">Activity</option>
+                  <option value="creation">Creation</option>
+                  <option value="votes">Votes</option>
+                  <option value="week">Week</option>
+                  <option value="month">Month</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <label>Score</label>
+                <input id="score-input" type="number">
+              </fieldset>
+              <button class="search-button">Search</button>
+            </form>
+          </section>
+          <section class="search-results">
+            <h2 class="center">Results</h2>
+            <table class="center table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Points</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/request.js"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
