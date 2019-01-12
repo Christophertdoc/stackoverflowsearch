@@ -1,7 +1,4 @@
-This project is a simple Stackoverflow search app built using reactjs  
-##### GitHub pages url
-[https://avashek.github.io/react-sfo/](https://avashek.github.io/react-sfo/)
-
+# Stack Overflow Search App
 
 ## Steps :
 Inside the project directory,  
