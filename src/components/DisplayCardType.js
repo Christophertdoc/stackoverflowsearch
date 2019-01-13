@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import QuestionCard from './QuestionCard';
-import FullCard from './FullCard';
+import Modal from './Modal';
 import glamorous from 'glamorous';
 
 const Div = glamorous.div({
@@ -11,7 +11,7 @@ const Div = glamorous.div({
     }
 })
 
-class Card extends Component{
+class DisplayCardType extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -31,10 +31,11 @@ class Card extends Component{
     render(){
         return(
             <Div>
+                {this.state.display}
                 {this.state.display === 'question' ?
                     <QuestionCard handleCardClick={this.handleCardClick} {...this.props.item}/> 
                 :
-                    <FullCard handleCardClick={this.handleCardClick} {...this.props.item}/>
+                    <Modal handleCardClick={this.handleCardClick} {...this.props.item}/>
                 }
             </Div>
         )
@@ -42,4 +43,4 @@ class Card extends Component{
 
 }
 
-export default Card;
+export default DisplayCardType;

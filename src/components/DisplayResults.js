@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import DisplayCardType from './DisplayCardType';
 import glamorous from  'glamorous';
 
 const Div = glamorous.div({
@@ -14,7 +14,7 @@ const DisplayResults = (props) => {
 	let resultItems = [];
 	props.items.map((item,i) => 
 		resultItems.push(
-			<Card key={i} item={item}/>
+			<DisplayCardType key={i} item={item}/>
 		)
 	)
 
