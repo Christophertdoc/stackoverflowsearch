@@ -1,5 +1,4 @@
 import React from 'react';
-import OwnerCard from './OwnerCard'
 import ReactHtmlParser from 'react-html-parser';
 import glamorous from 'glamorous';
 
@@ -32,7 +31,6 @@ const AnswerCard = (props) => {
             answers.push(
                 <AnswerDiv {...pr} key={i} >
                     <AnswerBody>{ReactHtmlParser(answer_body)}</AnswerBody>
-                    <OwnerCard {...answer.owner}/>
                 </AnswerDiv>
             );
             return 1;

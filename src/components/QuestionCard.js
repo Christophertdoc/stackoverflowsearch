@@ -1,5 +1,4 @@
 import React from 'react';
-import OwnerCard from './OwnerCard';
 import glamorous from 'glamorous';
 
 
@@ -64,12 +63,13 @@ const QuestionCard = (props) => {
 			<ScoreDiv>
 			<Label>Score</Label>
 			<Label>{props.score}</Label>
-			</ScoreDiv>
+			</ScoreDiv> 
 			<AnswersCountDiv>
 			<Label>Answers</Label>
 			<Label>{props.answer_count}</Label>
 			</AnswersCountDiv>
-			<OwnerCard {...props.owner}/>
+			<Label>Views</Label>
+			<Label>{props.view_count}</Label>
 		</CardContentDiv>
 		<tagsSpan>{tags}</tagsSpan>
 		</QuestionCardDiv>
