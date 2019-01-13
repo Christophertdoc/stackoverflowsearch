@@ -1,0 +1,29 @@
+.QuestionCard {
+    padding: 15px; 
+    width: 500px; 
+    display: flex; 
+    flex-flow: column; 
+    background-color: rgb(40, 44, 52);
+    h2 {
+       color: rgb(121, 182, 242); 
+       cursor: pointer; 
+    }
+    h3 {
+        color: white; 
+    }
+    ul {
+        li {
+            font-size: 12px; 
+            padding: 5px; 
+            margin: 3px; 
+            background: rgba(255,229,100,0.2);
+            color: white; 
+        }
+    }
+}
+
+// fontSize: '0.9em',
+// padding : '5px',
+// margin : '2px',
+// backgroundColor : '#8ff',
+// alignSelf: 'flex-end',
