@@ -1,27 +1,19 @@
 import React from 'react';
 import DisplayCardType from './DisplayCardType';
-import glamorous from  'glamorous';
 
-const Div = glamorous.div({
-	padding : '10px',
-	display : 'flex',
-	flexFlow : 'row wrap',
-	justifyContent : 'center'
-})
-
-const DisplayResults = (props) => {
+const DisplayResults = (props) => { 
 
 	let resultItems = [];
 	props.items.map((item,i) => 
 		resultItems.push(
-			<DisplayCardType key={i} item={item}/>
+			<li><DisplayCardType key={i} item={item}/></li>
 		)
 	)
 
 	return (
-		<Div className="displayresults">
+		<ul className="DisplayResults"> 
 			{resultItems}
-		</Div>
+		</ul>
 	);
 	
 }
