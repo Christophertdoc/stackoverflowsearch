@@ -1,5 +1,5 @@
 import React from 'react';
-import AnswerCard from './AnswerCard'
+import Answers from './Answers'
 import ReactHtmlParser from 'react-html-parser';
 import glamorous from 'glamorous';
 
@@ -49,7 +49,7 @@ const FullCard = (props) => {
                     <Padding>{ReactHtmlParser(props.body)};
                     </Padding>
                 </Question>
-                <AnswerCard answer_count={props.answer_count} answers={props.answers}/>
+                <Answers answer_count={props.answer_count} answers={props.answers}/>
             </Content>
         </FullCardDiv>
     )

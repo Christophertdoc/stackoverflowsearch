@@ -6,7 +6,7 @@ const QuestionCard = (props) => {
 		tags.push(
 			<li key={i}>{tag}</li>
 		)
-	);
+	); 
 
 	return (
 		<div className="QuestionCard">
