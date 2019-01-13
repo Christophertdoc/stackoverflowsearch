@@ -54,24 +54,27 @@ const Tag = glamorous.label({
 const QuestionCard = (props) => {
 	var tags = [];
 	props.tags.map((tag,i) =>
-		tags.push(<Tag key={i}>{tag}</Tag>));
+		tags.push(
+			<Tag key={i}>{tag}</Tag>
+		)
+	);
 
 	return (
 		<QuestionCardDiv>
-		<CardTitlelabel onClick={() => props.handleCardClick(props.answer_count)}>{props.title}</CardTitlelabel>
-		<CardContentDiv>
-			<ScoreDiv>
-			<Label>Score</Label>
-			<Label>{props.score}</Label>
-			</ScoreDiv> 
-			<AnswersCountDiv>
-			<Label>Answers</Label>
-			<Label>{props.answer_count}</Label>
-			</AnswersCountDiv>
-			<Label>Views</Label>
-			<Label>{props.view_count}</Label>
-		</CardContentDiv>
-		<tagsSpan>{tags}</tagsSpan>
+			<CardTitlelabel onClick={() => props.handleCardClick(props.answer_count)}>{props.title}</CardTitlelabel>
+			<CardContentDiv>
+				<ScoreDiv> 
+					<Label>Score</Label>
+					<Label>{props.score}</Label>
+				</ScoreDiv> 
+				<AnswersCountDiv>
+					<Label>Answers</Label>
+					<Label>{props.answer_count}</Label>
+				</AnswersCountDiv>
+				<Label>Views</Label>
+				<Label>{props.view_count}</Label>
+			</CardContentDiv>
+			<tagsSpan>{tags}</tagsSpan>
 		</QuestionCardDiv>
 	);
 }

@@ -20,19 +20,17 @@ class Card extends Component{
         this.handleCardClick = this.handleCardClick.bind(this);
     }
 
-    handleCardClick(answer_count) {
-        this.setState(prevState => (
-            prevState.display === "question" ? {
-                display : "answer",
-                } : {
-                display : "question",
-            })
-        )
+    handleCardClick() {
+        if (this.state.display === "question") {
+            this.setState({display: "answer"})
+        } else {
+            this.setState({display: "question"})
+        }
     }
 
     render(){
         return(
-            <Div className="card">
+            <Div>
                 {this.state.display === 'question' ?
                     <QuestionCard handleCardClick={this.handleCardClick} {...this.props.item}/> 
                 :
