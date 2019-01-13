@@ -1,21 +1,9 @@
 import React from 'react';
 import {fetchQuestionsByTagUrl} from '../JsonFetch'
-import glamorous from 'glamorous';
-
-const SearchBoxDiv = glamorous.div({
-  	textAlign : 'center'
-})
-const InputSubmit = glamorous.input({
-	backgroundColor : "blue",
-	color : '#fff',
-	height : '30px'
-})
-const InputText = glamorous.input({
-  	height : '25px'
-})
 
 
 class SearchBox extends React.Component {
+
 	constructor(props){
 		super(props);
 		this.state = {value : ""};
@@ -36,12 +24,10 @@ class SearchBox extends React.Component {
 
 	render(){
 		return (
-			<SearchBoxDiv>
-				<form onSubmit={this._onSubmit}>
-					<InputText type="text" value={this.state.value} onChange={this._handleChange} />
-					<InputSubmit type="submit" value="Search"/> 
-				</form>
-			</SearchBoxDiv>
+			<form className="SearchBox" onSubmit={this._onSubmit}>
+				<input type="text" value={this.state.value} onChange={this._handleChange} />
+				<input type="submit" value="Search"/> 
+			</form>
 		);
 	}
 }
