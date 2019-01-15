@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.scss';
 import SearchBox from './components/SearchBox';
-import DisplayResults from './components/DisplayResults'
+import Results from './components/Results'
 
 class App extends Component {
 	constructor(props){
@@ -27,7 +27,7 @@ class App extends Component {
 			<div className="App">
 				<SearchBox handleSubmit={this.handleSubmit}/>
 				{this.state.sfoJson && 
-					<DisplayResults handleCardClick={this.handleCardClick} items={sfoJson.items} />
+					<Results handleCardClick={this.handleCardClick} items={sfoJson.items} />
 				}
 			</div>
 		);

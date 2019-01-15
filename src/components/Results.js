@@ -1,21 +1,23 @@
 import React from 'react';
 import DisplayCardType from './DisplayCardType';
 
-const DisplayResults = (props) => { 
+const Results = (props) => { 
 
 	let resultItems = [];
 	props.items.map((item,i) => 
 		resultItems.push(
-			<li><DisplayCardType key={i} item={item}/></li>
+			<li>
+				<DisplayCardType key={i} item={item}/>
+			</li>
 		)
 	)
 
 	return (
-		<ul className="DisplayResults"> 
+		<ul className="Results"> 
 			{resultItems}
 		</ul>
 	);
 	
 }
 
-export default DisplayResults;
+export default Results;
