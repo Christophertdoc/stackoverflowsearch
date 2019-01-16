@@ -1,23 +1,23 @@
 .QuestionCard {
     padding: 15px; 
-    width: 500px; 
     display: flex; 
     flex-flow: column; 
-    background-color: rgb(40, 44, 52);
+    background-color: white;
     h2 {
-       color: rgb(121, 182, 242); 
+       color: black; 
        cursor: pointer; 
     }
     h3 {
-        color: white; 
+        color: black; 
     }
     ul {
         li {
             font-size: 12px; 
             padding: 5px; 
             margin: 3px; 
-            background: rgba(255,229,100,0.2);
-            color: white; 
+            border: 1px solid black;
+            background: white;
+            color: black; 
         }
     }
 }
