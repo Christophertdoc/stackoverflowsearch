@@ -26,7 +26,7 @@ class SearchBox extends React.Component {
 		return (
 			<div className="SearchBox"> 
 				<h1>Search Stack Overflow</h1>
-				<h4>Go ahead! Search for an answer</h4>
+				<h4>Go ahead! Search for an answer.</h4>
 				<form onSubmit={this.onSubmit}> 
 				
 					<input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Search" />
