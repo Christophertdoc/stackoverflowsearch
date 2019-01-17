@@ -1,3 +1,9 @@
+// BASE 
+@import 'styles/base/_variables.scss'; 
+@import 'styles/base/_base.scss'; 
+@import 'styles/base/_typography.scss'; 
+
+
 // COMPONENTS
 @import 'styles/components/_QuestionCard.scss';
 @import 'styles/components/_Answers.scss'; 
@@ -7,26 +13,4 @@
 @import 'styles/components/_SearchBox.scss'; 
 
 
-$grey3: #333; 
 
-.App {
-  background-color : $grey3;
-}
-code {
-    background-color : #eee;
-    color : #333;
-}
-pre{
-    padding : 10px;
-    overflow: scroll;
-    width : 600px;
-    background-color : #ccc;
-    color : #005;
-}
-pre > code {
-    background-color : #ccc;
-    color : #005;
-}
-.card{
-
-}

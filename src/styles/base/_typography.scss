@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'NHG Light';
+    src: url("styles/fonts/NHaasGroteskDSPro-45Lt.otf");
+    font-weight: 400; 
+}
+  
+@font-face {
+    font-family: 'NHG Light Italic';
+    src: url("styles/fonts/NHaasGroteskDSPro-46LtIt.otf");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'NHG Regular';
+    src: url("styles/fonts/NHaasGroteskTXPro-55Rg.otf");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'NHG Regular Italic';
+    src: url("styles/fonts/NHaasGroteskTXPro-56It.otf");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'NHG Medium';
+    src: url("styles/fonts/NHaasGroteskDSPro-65Md.otf");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'NHG Medium Italic';
+    src: url("styles/fonts/NHaasGroteskDSPro-66MdIt.otf");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'NHG Bold';
+    src: url("styles/fonts/NHaasGroteskDSPro-75Bd.otf");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'NHG Bold Italic';
+    src: url("styles/fonts/NHaasGroteskDSPro-76BdIt.otf");
+    font-weight: 400; 
+}
+
+@font-face {
+    font-family: 'HN Light Cond';
+    src: url("styles/fonts/HelveticaNeueLTStd-LtCn.otf");
+    font-weight: 400; 
+}
+
+h1 /*Hero Headline*/{
+    font-family: $ngh-bd;
+    font-size: 40px;
+    line-height: 1em;
+}
+h2 /*Headline*/{
+    font-family: $ngh-bd;
+    font-size: 30px;
+    line-height: 1em;
+}
+h3 /*Buttons*/{
+    font-family: $ngh-md;
+    font-size: 16px;
+    line-height: 1em;
+}
+h4 /*Buttons*/{
+    font-family: $ngh-md;
+    font-size: 16px;
+    line-height: 1em;
+}
+h6 /*Legal*/{
+    font-family: $hn-lt;
+    font-size: 11px;
+    line-height: 1.2em;
+}
+p /*Body*/{
+    font-family: $ngh-rg;
+    font-size: 15px;
+    line-height: 1.2em;
+}

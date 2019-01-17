@@ -8,10 +8,10 @@ const QuestionCard = (props) => {
 			<li key={i}>{ ReactHtmlParser(tag) }</li>
 		)
 	); 
-
+ 
 	return (
 		<div className="QuestionCard">
-			<h2 onClick={() => props.handleCardClick(props.answer_count)}>{ ReactHtmlParser(props.title) }</h2>
+			<h1 onClick={() => props.handleCardClick(props.answer_count)}>{ ReactHtmlParser(props.title) }</h1>
 			<h3>Score: {props.score}</h3>
 			<h3>Answers: {props.answer_count}</h3>
 			<h3>Views: {props.view_count}</h3>
