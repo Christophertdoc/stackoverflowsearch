@@ -32,11 +32,11 @@ const Modal = (props) => {
 
     return (
         <div className="Modal"> 
-            <h1>{props.title}</h1> 
-            <h3>Asked: {moment.unix(props.creation_date).format('dddd, MMMM Do, YYYY h:mm A')}</h3> 
+            <h1>{ ReactHtmlParser(props.title) }</h1> 
+            <h3>Asked: { moment.unix(props.creation_date).format('dddd, MMMM Do, YYYY h:mm A') }</h3> 
             <button onClick={() => {props.handleCardClick(props.answer_count)}}>X</button>
             <div className="content">
-                <p>{ReactHtmlParser(props.body)}</p>  
+                <p>{ ReactHtmlParser(props.body) }</p>  
                 <Answers answer_count={props.answer_count} answers={props.answers}/>
             </div>
         </div>

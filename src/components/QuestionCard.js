@@ -3,9 +3,9 @@ import ReactHtmlParser from "react-html-parser";
 
 const QuestionCard = (props) => {
 	var tags = [];
-	props.tags.map((tag,i) =>
+	props.tags.map((tag,i) =>  
 		tags.push(
-			<li key={i}>{tag}</li>
+			<li key={i}>{ ReactHtmlParser(tag) }</li>
 		)
 	); 
 
