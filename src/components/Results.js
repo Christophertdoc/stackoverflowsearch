@@ -15,7 +15,7 @@ const Results = (props) => {
 	return (
 		<ul className="Results"> 
 			{resultItems}
-		</ul>
+		</ul> 
 	);
 	
 }

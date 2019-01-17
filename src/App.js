@@ -25,10 +25,16 @@ class App extends Component {
 		const {sfoJson} = this.state;
 		return (
 			<div className="App">
-				<SearchBox handleSubmit={this.handleSubmit}/>
-				{this.state.sfoJson && 
-					<Results handleCardClick={this.handleCardClick} items={sfoJson.items} />
-				}
+				<div className="left">
+					<SearchBox handleSubmit={this.handleSubmit}/>
+				</div>
+				<div className="right">
+					<h2>Results:</h2>
+					<div className="dividerLine" />
+					{this.state.sfoJson && 
+						<Results handleCardClick={this.handleCardClick} items={sfoJson.items} />
+					}
+				</div>
 			</div>
 		);
 	}

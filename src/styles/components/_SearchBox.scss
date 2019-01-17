@@ -1,5 +1,36 @@
 .SearchBox {
-    input {
-        height: 25px; 
+    width: 50%;
+    height: 100vh; 
+    background-color: $white; 
+    padding: 30px; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    h1 {
+        margin-bottom: 5px;
+    }
+    h4 {
+        margin-bottom: 70px;
+    }
+    form {
+        width: 200px;
+        position: relative; 
+        input {
+            height: 25px; 
+            border-top: none; 
+            border-left: none;
+            border-right: none; 
+            border-bottom: 1px solid $black;
+            color: $grey7; 
+            font-family: $ngh-lt;
+            font-size: 20px; 
+            width: 200px; 
+            outline: none; 
+        }
+        svg {
+            position: absolute;
+            right: 0px; 
+            top: 0px; 
+        }
     }
 }
