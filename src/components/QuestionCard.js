@@ -16,7 +16,7 @@ const QuestionCard = (props) => {
 			<h3>Answers: {props.answer_count}</h3>
 			<h3>Views: {props.view_count}</h3>
 			<ul>
-				{tags}
+				<h6>{tags}</h6>
 			</ul>
 		</div>
 	);

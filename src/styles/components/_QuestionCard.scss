@@ -1,23 +1,29 @@
 .QuestionCard {
-    padding: 15px; 
+    padding-top: 20px;
+    padding-bottom: 50px; 
     display: flex; 
     flex-flow: column; 
-    background-color: white;
-    h2 {
-       color: black; 
-       cursor: pointer; 
+    background-color: $black;
+    border-bottom: 1px solid $white;
+    h1 {
+        color: $white; 
+        margin-bottom: 10px; 
     }
     h3 {
-        color: black; 
+        color: $white; 
+        margin-bottom: 5px; 
     }
     ul {
+        margin-top: 10px;
         li {
-            font-size: 12px; 
+            font-size: 12px;  
+            display: inline-block; 
             padding: 5px; 
-            margin: 3px; 
-            border: 1px solid black;
-            background: white;
-            color: black; 
+            margin: 4px; 
+            width: 100px;
+            border: 1px solid $white;
+            background: $black;
+            color: $white; 
         }
     }
 }

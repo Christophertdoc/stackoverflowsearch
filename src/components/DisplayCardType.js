@@ -23,7 +23,7 @@ class DisplayCardType extends Component{
 
     render(){
         return(
-            <div className="DisplayCardType">
+            <div className="DisplayCardType"> 
                 {this.state.display === 'question' ?
                     <QuestionCard handleCardClick={this.handleCardClick} {...this.props.item}/> 
                 :
