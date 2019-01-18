@@ -14,13 +14,23 @@ const Modal = (props) => {
                 if (answer.is_accepted) {
                     accepted = "accepted";
                 }
-                answers.push(
+                if (!accepted) {
+                    answers.push(
                     <div className={`AnswerCard ${accepted}`} key={i}>
-                        <h4>{moment.unix(answer.creation_date).format('dddd, MMMM Do, YYYY h:mm A')}</h4>
+                        <h4>{moment.unix(answer.creation_date).format('MMM Do, YYYY')}</h4>
                         <div className="acceptedAnswer">Accepted Answer</div>
                         <p>{ReactHtmlParser(answer_body)}</p> 
                     </div>
-                );
+                    );
+                } else {
+                    answers.unshift(
+                        <div className={`AnswerCard ${accepted}`} key={i}>
+                            <h4>{moment.unix(answer.creation_date).format('MMM Do, YYYY')}</h4>
+                            <div className="acceptedAnswer">Accepted Answer</div>
+                            <p>{ReactHtmlParser(answer_body)}</p> 
+                        </div>
+                    );
+                }
             }
         )}
         return( 
@@ -38,7 +48,7 @@ const Modal = (props) => {
                 <div className="content">
                     <div className="question">
                         <h1>{ ReactHtmlParser(props.title) }</h1> 
-                        <h3>{ moment.unix(props.creation_date).format('dddd, MMMM Do, YYYY h:mm A') }</h3> 
+                        <h3>{ moment.unix(props.creation_date).format('MMM Do, YYYY') }</h3> 
                         <p>{ ReactHtmlParser(props.body) }</p>  
                     </div>
                     <Answers answer_count={props.answer_count} answers={props.answers}/>
