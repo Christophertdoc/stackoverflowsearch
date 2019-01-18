@@ -3,9 +3,6 @@ export const fetchQuestionsByIdUrl = (id) => {
     return url;
 }
 export const fetchQuestionsByTagUrl = (tag) => {
-    //with answers
-    let url = 'https://api.stackexchange.com/2.2/questions?pagesize=10&order=asc&sort=activity&tagged='+tag+'&site=stackoverflow&filter=!-*f(6rc.(Jba';
-    //only question
-    //let url = 'https://api.stackexchange.com//2.2/questions?pagesize=10&order=asc&sort=votes&tagged='+tag+'&site=stackoverflow';
+    let url = 'https://api.stackexchange.com/2.2/questions?pagesize=30&order=asc&sort=activity&tagged='+tag+'&site=stackoverflow&filter=!-*f(6rc.(Jba';
     return url;
 }
