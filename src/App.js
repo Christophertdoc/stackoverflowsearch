@@ -31,9 +31,11 @@ class App extends Component {
 				<div className="right">
 					<h2>Results:</h2>
 					<div className="dividerLine" />
-					{this.state.sfoJson && 
-						<Results handleCardClick={this.handleCardClick} items={sfoJson.items} />
-					}
+					<div className="scrollDiv">
+						{this.state.sfoJson && 
+							<Results handleCardClick={this.handleCardClick} items={sfoJson.items} />
+						}
+					</div>
 				</div>
 			</div>
 		);

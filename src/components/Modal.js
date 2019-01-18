@@ -17,27 +17,33 @@ const Modal = (props) => {
                 answers.push(
                     <div className={`AnswerCard ${accepted}`} key={i}>
                         <h4>{moment.unix(answer.creation_date).format('dddd, MMMM Do, YYYY h:mm A')}</h4>
-                        <p>{ReactHtmlParser(answer_body)}</p>
+                        <div className="acceptedAnswer">Accepted Answer</div>
+                        <p>{ReactHtmlParser(answer_body)}</p> 
                     </div>
                 );
             }
         )}
-        return(
-            <div className="Answers">
-                <h3>Answers</h3>
+        return( 
+            <div className="Answers"> 
+                <h2>Answers:</h2>
                 {answers.length > 0 ? answers : <h3>No answers yet</h3>}
-            </div>
+            </div> 
         )
     }
 
     return (
-        <div className="Modal"> 
-            <h1>{ ReactHtmlParser(props.title) }</h1> 
-            <h3>{ moment.unix(props.creation_date).format('dddd, MMMM Do, YYYY h:mm A') }</h3> 
-            <button onClick={() => {props.handleCardClick(props.answer_count)}}>X</button>
-            <div className="content">
-                <p>{ ReactHtmlParser(props.body) }</p>  
-                <Answers answer_count={props.answer_count} answers={props.answers}/>
+        <div className="Modal">  
+            <div className="modal-container"> 
+                {/* INSERT "X" HERE  */}
+                <h3 className="back" onClick={() => {props.handleCardClick(props.answer_count)}}><div className="chevron" />back</h3>
+                <div className="content">
+                    <div className="question">
+                        <h1>{ ReactHtmlParser(props.title) }</h1> 
+                        <h3>{ moment.unix(props.creation_date).format('dddd, MMMM Do, YYYY h:mm A') }</h3> 
+                        <p>{ ReactHtmlParser(props.body) }</p>  
+                    </div>
+                    <Answers answer_count={props.answer_count} answers={props.answers}/>
+                </div>
             </div>
         </div>
     )
