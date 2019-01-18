@@ -37,56 +37,57 @@
                     margin-top: 20px; 
                 }
             }
+            .Answers {
+                h2 {
+                    position: relative !important; 
+                    margin-bottom: 10px;
+                }
+                .AnswerCard {
+                    padding-bottom: 30px; 
+                    padding-top: 30px; 
+                    border-bottom: 1px solid $white;
+                    .acceptedAnswer {
+                        font-size: 12px;  
+                        display: inline-block; 
+                        padding: 5px; 
+                        margin: 4px; 
+                        width: 100px;
+                        border: 1px solid $black;
+                        background: $white;
+                        color: $black; 
+                        display: none; 
+                    }
+                    h4 {
+                        color: $white; 
+                    }
+                    p {
+                        margin-top: 20px; 
+                    }
+                    &.accepted {
+                        background-color: $white;
+                        padding: 30px; 
+                        .acceptedAnswer { 
+                            display: inline-block; 
+                            float: right;
+                            margin-top: -25px;
+                        }
+                        h4 {
+                            color: $black; 
+                        }
+                        h3 {
+                            color: $black; 
+                        }
+                        p {
+                            color: $black; 
+                        }
+                    }
+                }
+            }
         }
     } 
 } 
 
-.Answers {
-    h2 {
-        position: relative !important; 
-        margin-bottom: 10px;
-    }
-    .AnswerCard {
-        padding-bottom: 30px; 
-        padding-top: 30px; 
-        border-bottom: 1px solid $white;
-        .acceptedAnswer {
-            font-size: 12px;  
-            display: inline-block; 
-            padding: 5px; 
-            margin: 4px; 
-            width: 100px;
-            border: 1px solid $black;
-            background: $white;
-            color: $black; 
-            display: none; 
-        }
-        h4 {
-            color: $white; 
-        }
-        p {
-            margin-top: 20px; 
-        }
-        &.accepted {
-            background-color: $white;
-            padding: 30px; 
-            .acceptedAnswer { 
-                display: inline-block; 
-                float: right;
-                margin-top: -25px;
-            }
-            h4 {
-                color: $black; 
-            }
-            h3 {
-                color: $black; 
-            }
-            p {
-                color: $black; 
-            }
-        }
-    }
-}
+
 
 
 
