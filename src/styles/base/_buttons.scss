@@ -1,0 +1,17 @@
+.openModalBtn {
+    text-align: right; 
+    margin-top: -19px;
+    .chevron {
+        width: 10px;
+        height: 10px; 
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        margin-left: 5px;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); 
+        transform: rotate(45deg);
+        border-right: 2px solid $white; 
+        border-top: 2px solid $white; 
+    }
+}

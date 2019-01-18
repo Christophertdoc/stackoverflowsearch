@@ -16,7 +16,7 @@ const Modal = (props) => {
                 }
                 answers.push(
                     <div className={`AnswerCard ${accepted}`} key={i}>
-                        <h4>Answered: {moment.unix(answer.creation_date).format('dddd, MMMM Do, YYYY h:mm A')}</h4>
+                        <h4>{moment.unix(answer.creation_date).format('dddd, MMMM Do, YYYY h:mm A')}</h4>
                         <p>{ReactHtmlParser(answer_body)}</p>
                     </div>
                 );
@@ -33,7 +33,7 @@ const Modal = (props) => {
     return (
         <div className="Modal"> 
             <h1>{ ReactHtmlParser(props.title) }</h1> 
-            <h3>Asked: { moment.unix(props.creation_date).format('dddd, MMMM Do, YYYY h:mm A') }</h3> 
+            <h3>{ moment.unix(props.creation_date).format('dddd, MMMM Do, YYYY h:mm A') }</h3> 
             <button onClick={() => {props.handleCardClick(props.answer_count)}}>X</button>
             <div className="content">
                 <p>{ ReactHtmlParser(props.body) }</p>  

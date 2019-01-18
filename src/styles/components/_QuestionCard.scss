@@ -5,13 +5,14 @@
     flex-flow: column; 
     background-color: $black;
     border-bottom: 1px solid $white;
+    cursor: pointer; 
     h1 {
         color: $white; 
         margin-bottom: 10px; 
     }
     h3 {
         color: $white; 
-        margin-bottom: 5px; 
+        margin-bottom: 7px; 
     }
     ul {
         margin-top: 10px;
