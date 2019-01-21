@@ -20,7 +20,7 @@ const Modal = (props) => {
                         <h4>{moment.unix(answer.creation_date).format('MMM Do, YYYY')}</h4>
                         <div className="acceptedAnswer">Accepted Answer</div>
                         <p>{ReactHtmlParser(answer_body)}</p> 
-                    </div>
+                    </div> 
                     );
                 } else {
                     answers.unshift(
@@ -28,7 +28,7 @@ const Modal = (props) => {
                             <h4>{moment.unix(answer.creation_date).format('MMM Do, YYYY')}</h4>
                             <div className="acceptedAnswer">Accepted Answer</div>
                             <p>{ReactHtmlParser(answer_body)}</p> 
-                        </div>
+                        </div> 
                     );
                 }
             }
@@ -41,7 +41,7 @@ const Modal = (props) => {
         )
     }
 
-    return (
+    return ( 
         <div className="Modal">  
             <div className="modal-container"> 
                 <h3 className="back" onClick={() => {props.handleCardClick(props.answer_count)}}><div className="chevron" />back</h3>

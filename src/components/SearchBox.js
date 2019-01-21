@@ -6,7 +6,7 @@ class SearchBox extends React.Component {
 
 	constructor(props){
 		super(props);
-		this.state = {value : "React"};
+		this.state = {value : ""};
 		this.handleChange = this.handleChange.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
 	}
