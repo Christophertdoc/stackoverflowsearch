@@ -16,11 +16,11 @@ const Modal = (props) => {
                 }
                 if (!accepted) {
                     answers.push(
-                    <div className={`AnswerCard ${accepted}`} key={i}>
-                        <h4>{moment.unix(answer.creation_date).format('MMM Do, YYYY')}</h4>
-                        <div className="acceptedAnswer">Accepted Answer</div>
-                        <p>{ReactHtmlParser(answer_body)}</p> 
-                    </div> 
+                        <div className={`AnswerCard ${accepted}`} key={i}>
+                            <h4>{moment.unix(answer.creation_date).format('MMM Do, YYYY')}</h4>
+                            <div className="acceptedAnswer">Accepted Answer</div>
+                            <p>{ReactHtmlParser(answer_body)}</p> 
+                        </div> 
                     );
                 } else {
                     answers.unshift(
