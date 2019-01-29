@@ -43,8 +43,8 @@ const Modal = (props) => {
 
     return ( 
         <div className="Modal">  
-            <div className="modal-container"> 
-                <h3 className="back" onClick={() => {props.handleCardClick(props.answer_count)}}><div className="chevron" />back</h3>
+            <div className="modal-container" onClick={() => {props.handleCardClick()}}> 
+                <h3 className="back"><div className="chevron" />back</h3>
                 <div className="content">
                     <div className="question">
                         <h1>{ ReactHtmlParser(props.title) }</h1> 
